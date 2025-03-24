@@ -35,43 +35,46 @@ export default function Home() {
     <>
       <div>
         <NavBar />
-        <Hero />
-        <AosInit />
-        
-        {/* Service Section with Heading */}
-        <div className="mt-24 px-4 py-12">
-          {/* Service Heading */}
-          <div className="text-center mb-12" data-aos="fade-up">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
-            <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
-            <p className="max-w-2xl mx-auto text-gray-600">
-              We provide top-quality technology solutions tailored to meet your specific needs
-            </p>
+        {/* Added top padding to account for fixed navbar */}
+        <div className="pt-16">
+          <Hero />
+          <AosInit />
+          
+          {/* Service Section with Heading */}
+          <div className="px-4 py-12">
+            {/* Service Heading */}
+            <div className="text-center mb-12" data-aos="fade-up">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+              <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+              <p className="max-w-2xl mx-auto text-gray-600">
+                We provide top-quality technology solutions tailored to meet your specific needs
+              </p>
+            </div>
+            
+            {/* Service Cards - Fixed layout issues */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4" data-aos="zoom-in">
+              {services.map((service, index) => (
+                <Cards 
+                  key={index} 
+                  className="card flex flex-col items-center 
+                  justify-evenly bg-gray-100 text-center 
+                  rounded shadow-md p-6 transition-transform
+                  duration-300 hover:scale-105 hover:bg-blue-100 h-full"
+                >
+                  <FontAwesomeIcon icon={service.icon} className="text-4xl mb-4 text-blue-500" />
+                  <h3 className="text-xl font-bold mb-2">{service.title}</h3>
+                  <p className="text-gray-700">{service.description}</p>
+                </Cards>
+              ))}
+            </div>
           </div>
           
-          {/* Service Cards */}
-          <div className="flex flex-col sm:flex-col h-[500px] lg:flex-row items-center justify-center gap-12 p-4" data-aos="zoom-in">
-            {services.map((service, index) => (
-              <Cards 
-                key={index} 
-                className="card flex flex-col items-center 
-                justify-evenly bg-gray-100 text-center 
-                rounded shadow-md p-6 transition-transform
-                duration-300 hover:scale-105 hover:bg-blue-100"
-              >
-                <FontAwesomeIcon icon={service.icon} className="text-4xl mb-4 text-blue-500" />
-                <h3 className="text-xl font-bold mb-2">{service.title}</h3>
-                <p className="text-gray-700">{service.description}</p>
-              </Cards>
-            ))}
-          </div>
+          <Project />
+          <Training/>
+          <Consulting />
+          <AdvertsSection />
+          <Footer />
         </div>
-        
-        <Project />
-        <Training/>
-        <Consulting />
-        <AdvertsSection />
-        <Footer />
       </div>
     </>
   );
