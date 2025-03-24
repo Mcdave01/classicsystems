@@ -41,19 +41,19 @@ const NavBar = () => {
   return (
     <nav 
       ref={navRef}
-      className="bg-blue-600   shadow-md w-full transition-all duration-300 fixed top-0 left-0 z-50 h-[100px]"
+      className="bg-blue-600   shadow-md w-full transition-all duration-300 fixed px-5 top-0 left-0 z-50 h-[50px]"
     >
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo with reduced height */}
         <div className="text-white font-bold">
-          <Link href="/" className="flex items-center h-15">
-            <div className=" mt-10 flex items-center">
+          <Link href="/" className="flex items-center h-10">
+            <div className="flex items-center">
               <Image
                 src={csil_logo}
                 alt="CSIL Logo"
-                width={40}
+                width={30}
                 height={5}
-                className="rounded object-contain"
+                className="rounded mt-2 "
                 priority
               />
             </div>
