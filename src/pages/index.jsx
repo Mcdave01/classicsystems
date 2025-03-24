@@ -78,4 +78,5 @@ export default function Home() {
       </div>
     </>
   );
-}
+}console.log('Rendering Home component');
+console.log('Services:', services);
