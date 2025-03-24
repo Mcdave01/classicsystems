@@ -1,7 +1,9 @@
 import "@/app/globals.css";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
+import csil_logo from "@/asset/csil_logo.jpg";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,6 +30,9 @@ const NavBar = () => {
     
     window.addEventListener('scroll', handleScroll);
     
+    // Initial check when component mounts
+    handleScroll();
+    
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -36,14 +41,23 @@ const NavBar = () => {
   return (
     <nav 
       ref={navRef}
-      className={`bg-blue-600 p-4 shadow-md relative w-full transition-all duration-300 ${
-        isSticky ? 'fixed top-0 left-0 z-50 shadow-lg' : ''
-      }`}
+      className="bg-blue-600   shadow-md w-full transition-all duration-300 fixed top-0 left-0 z-50 h-[100px]"
     >
       <div className="container mx-auto flex justify-between items-center">
-        {/* Logo */}
-        <div className="text-white text-2xl font-bold">
-          <Link href="/">Logo</Link>
+        {/* Logo with reduced height */}
+        <div className="text-white font-bold">
+          <Link href="/" className="flex items-center h-15">
+            <div className=" mt-10 flex items-center">
+              <Image
+                src={csil_logo}
+                alt="CSIL Logo"
+                width={40}
+                height={5}
+                className="rounded object-contain"
+                priority
+              />
+            </div>
+          </Link>
         </div>
         
         {/* Mobile Menu Button */}
@@ -55,7 +69,7 @@ const NavBar = () => {
         
         {/* Links for Desktop and Mobile */}
         <div
-          className={`lg:flex lg:items-center lg:space-x-8 absolute lg:static left-0 right-0 top-16 lg:top-auto z-50 lg:w-auto w-full bg-blue-600 lg:bg-transparent p-4 lg:p-0 shadow-lg lg:shadow-none transition-all duration-300 ease-in-out ${
+          className={`lg:flex lg:items-center lg:space-x-8 absolute lg:static left-0 right-0 top-14 lg:top-auto z-50 lg:w-auto w-full bg-blue-600 lg:bg-transparent p-4 lg:p-0 shadow-lg lg:shadow-none transition-all duration-300 ease-in-out ${
             isOpen ? 'block' : 'hidden'
           }`}
           onMouseLeave={closeMenu}
