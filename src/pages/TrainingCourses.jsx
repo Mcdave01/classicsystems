@@ -93,7 +93,7 @@ const CoursesFilter = ({ activeFilter, setActiveFilter }) => {
           onClick={() => setActiveFilter(filter.value)}
           className={`px-5 py-2 rounded-full transition-all duration-200 ${
             activeFilter === filter.value
-              ? "bg-blue-600 text-white shadow-md"
+              ? "bg-red-600 text-white shadow-md"
               : "bg-gray-100 text-gray-600 hover:bg-gray-200"
           }`}
         >
@@ -112,7 +112,7 @@ const TrainingCourses = () => {
       title: "Cyber Security",
       description: "Learn to protect systems, networks, and programs from digital attacks. Covers security fundamentals, ethical hacking, and threat analysis.",
       iconComponent: <Shield className="h-8 w-8 text-white" />,
-      color: "border-blue-600",
+      color: "border-red-600",
       link: "/training/whatsapp", // Using a special value that will be replaced with WhatsApp link
       delay: "0",
       duration: "8 weeks",
@@ -123,7 +123,7 @@ const TrainingCourses = () => {
       title: "Mobile App Development",
       description: "Master the creation of applications for iOS and Android platforms using React Native, Flutter, and native development approaches.",
       iconComponent: <Smartphone className="h-8 w-8 text-white" />,
-      color: "border-blue-600",
+      color: "border-red-600",
       link: "/training/whatsapp", // Using a special value that will be replaced with WhatsApp link
       delay: "100",
       duration: "10 weeks",
@@ -134,7 +134,7 @@ const TrainingCourses = () => {
       title: "Data Science",
       description: "Explore data analysis, visualization, machine learning, and AI to extract valuable insights and make data-driven decisions.",
       iconComponent: <Database className="h-8 w-8 text-white" />,
-      color: "border-blue-600",
+      color: "border-red-600",
       link: "/training/whatsapp", // Using a special value that will be replaced with WhatsApp link
       delay: "200",
       duration: "12 weeks",
@@ -145,7 +145,7 @@ const TrainingCourses = () => {
       title: "Digital Literacy",
       description: "Develop essential computer skills, internet navigation, online safety, and productivity tools for the modern digital workplace.",
       iconComponent: <Monitor className="h-8 w-8 text-white" />,
-      color: "border-blue-600",
+      color: "border-red-600",
       link: "/training/whatsapp", // Using a special value that will be replaced with WhatsApp link
       delay: "300",
       duration: "8 weeks",
@@ -156,7 +156,7 @@ const TrainingCourses = () => {
       title: "UI/UX Design",
       description: "Create intuitive user interfaces and meaningful experiences through user research, wireframing, prototyping, and usability testing.",
       iconComponent: <Layers className="h-8 w-8 text-white" />,
-      color: "border-blue-600",
+      color: "border-red-600",
       link: "/training/whatsapp", // Using a special value that will be replaced with WhatsApp link
       delay: "400",
       duration: "8 weeks",
@@ -167,7 +167,7 @@ const TrainingCourses = () => {
       title: "Graphics Design",
       description: "Learn visual communication principles and design techniques using industry-standard tools like Photoshop, Illustrator, and more.",
       iconComponent: <PenTool className="h-8 w-8 text-white" />,
-      color: "border-blue-600",
+      color: "border-red-600",
       link: "/training/whatsapp", // Using a special value that will be replaced with WhatsApp link
       delay: "500",
       duration: "8 weeks",
@@ -178,7 +178,7 @@ const TrainingCourses = () => {
       title: "Web Development",
       description: "Build responsive and dynamic websites using modern frontend and backend technologies like HTML, CSS, JavaScript, React, and Node.js.",
       iconComponent: <Code className="h-8 w-8 text-white" />,
-      color: "border-blue-600",
+      color: "border-red-600",
       link: "/training/whatsapp", // Using a special value that will be replaced with WhatsApp link
       delay: "0",
       duration: "12 weeks",
@@ -189,7 +189,7 @@ const TrainingCourses = () => {
       title: "Backend Development",
       description: "Master server-side programming, APIs, databases, and cloud services to build robust and scalable application backends.",
       iconComponent: <Server className="h-8 w-8 text-white" />,
-      color: "border-blue-600",
+      color: "border-red-600",
       link: "/training/whatsapp",
       delay: "100",
       duration: "10 weeks",
@@ -200,7 +200,7 @@ const TrainingCourses = () => {
       title: "Artificial Intelligence",
       description: "Explore the fundamentals of AI, machine learning algorithms, neural networks, and practical applications in various domains.",
       iconComponent: <Cpu className="h-8 w-8 text-white" />,
-      color: "border-blue-600",
+      color: "border-red-600",
       link:"/training/whatsapp",
       delay: "200",
       duration: "14 weeks",
@@ -211,7 +211,7 @@ const TrainingCourses = () => {
       title: "DevOps & CI/CD",
       description: "Learn the practices, tools, and philosophies for integrating development and operations to deliver high-quality software faster.",
       iconComponent: <GitBranch className="h-8 w-8 text-white" />,
-      color: "border-blue-600",
+      color: "border-red-600",
       link: "/training/whatsapp",
       delay: "300",
       duration: "8 weeks",
@@ -222,7 +222,7 @@ const TrainingCourses = () => {
       title: "Cloud Computing",
       description: "Master cloud platforms like AWS, Azure, and Google Cloud to deploy, manage, and scale applications in the cloud.",
       iconComponent: <Cloud className="h-8 w-8 text-white" />,
-      color: "border-blue-600",
+      color: "border-red-600",
       link: "/training/whatsapp",
       delay: "400",
       duration: "10 weeks",
@@ -233,7 +233,7 @@ const TrainingCourses = () => {
       title: "Blockchain Development",
       description: "Learn the fundamentals of blockchain technology and how to develop decentralized applications (dApps) and smart contracts.",
       iconComponent: <Binary className="h-8 w-8 text-white" />,
-      color: "border-blue-600",
+      color: "border-red-600",
       link: "/training/blockchain",
       delay: "500",
       duration: "10 weeks",
@@ -305,7 +305,7 @@ const TrainingCourses = () => {
                   href="https://wa.me/+2347035655588?text=I'm%20interested%20in%20your%20custom%20training%20options.%20Please%20provide%20more%20information."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block px-6 py-3 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors text-lg font-medium"
+                  className="inline-block px-6 py-3 rounded-lg bg-red-600 text-white hover:bg-red-900/70 transition-colors text-lg font-medium"
                 >
                   Request Custom Training
                 </Link>
@@ -362,7 +362,7 @@ const TrainingCourses = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-blue-600 text-white">
+      <section className="py-16 px-4 bg-gray-900 text-white">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Advance Your Skills?</h2>
           <p className="max-w-2xl mx-auto mb-8 text-blue-100">
@@ -370,13 +370,13 @@ const TrainingCourses = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link 
-              href="/contact"
+              href="/Contact"
               className="inline-block px-6 py-3 rounded-lg bg-white text-blue-600 hover:bg-blue-50 transition-colors text-lg font-medium"
             >
               Contact Us
             </Link>
             <Link 
-              href="#courses"
+              href="/TrainingCourses"
               className="inline-block px-6 py-3 rounded-lg bg-transparent border-2 border-white text-white hover:bg-white/10 transition-colors text-lg font-medium"
             >
               Browse Courses
