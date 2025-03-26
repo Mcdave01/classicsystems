@@ -112,7 +112,7 @@ const Training = () => {
         >
           <Link
             href="/TrainingCourses"
-            className="inline-block bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors text-lg font-medium"
+            className="inline-block bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-700 transition-colors text-lg font-medium"
           >
             View All Courses
           </Link>

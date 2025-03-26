@@ -60,7 +60,7 @@ const CourseCard = ({ title, description, iconComponent, color, link, delay, dur
 
 const TrainingCoursesBanner = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-700 to-blue-900 py-20">
+    <div className="bg-gray-900 h-[400px] py-20">
       <div className="container mx-auto px-4">
         <div className="text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4" data-aos="fade-up">
