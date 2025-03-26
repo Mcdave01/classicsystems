@@ -94,7 +94,7 @@ const CoursesFilter = ({ activeFilter, setActiveFilter }) => {
           className={`px-5 py-2 rounded-full transition-all duration-200 ${
             activeFilter === filter.value
               ? "bg-red-600 text-white shadow-md"
-              : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+              : "bg-gray-100 text-gray-700 hover:bg-gray-200"
           }`}
         >
           {filter.name}
