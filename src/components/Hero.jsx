@@ -40,11 +40,11 @@ export default function Hero() {
 
          {/* Slide 1 */}
       <SwiperSlide>
-        <div className="h-screen bg-cover bg-center" style={{ backgroundImage: `url(${sli_hero.src})`}}>
+        <div className="h-screen bg-cover bg-center mt-[0px]" style={{ backgroundImage: `url(${sli_hero.src})`}}>
           <div className="flex h-full  items-center justify-center">
             <Cards className="justify-center w-[1000px] h-[400px] 
              pt-[100px] text-[3rem] textShadow-lg
-               shadow-amber-800 text-white font-bold">
+               shadow-amber-500 text-white font-bold bg-amber-600/50">
           <p >Welcome to Classic Systems Infotech</p>
             </Cards>
           </div>
@@ -55,7 +55,11 @@ export default function Hero() {
        <SwiperSlide>
         <div className="h-screen bg-cover bg-center" style={{ backgroundImage: `url(${sli_img1.src})`}}>
           <div className="flex h-full items-center justify-center">
-            <h1 className="text-5xl font-bold text-white">Discover Our Services</h1>
+          <Cards className="justify-center w-[1000px] h-[400px] 
+             pt-[100px] text-[3rem] textShadow-lg
+               shadow-amber-500 text-white font-bold bg-amber-600/50">
+          <h1>Discover Our Services</h1>
+            </Cards>
           </div>
         </div>
       </SwiperSlide>

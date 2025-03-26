@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import csil_logo from "@/asset/csil_logo.jpg";
-
+import AosInit from "@/app/aos";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -41,7 +41,7 @@ const NavBar = () => {
   return (
     <nav 
       ref={navRef}
-      className="bg-blue-600   shadow-md w-full transition-all duration-300 fixed px-5 top-0 left-0 z-50 h-[50px]"
+      className="bg-red-600   shadow-md w-full transition-all duration-300 fixed px-10 top-0 left-0 z-50 h-[50px]"
     >
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo with reduced height */}
@@ -59,22 +59,22 @@ const NavBar = () => {
             </div>
           </Link>
         </div>
-        
+        <AosInit />
         {/* Mobile Menu Button */}
-        <div className="lg:hidden">
-          <button onClick={toggleMenu} className="text-white focus:outline-none">
+        <div className="lg:hidden" data-aos="fade-up" >
+          <button onClick={toggleMenu} className="text-white focus:outline-none"  >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
         
         {/* Links for Desktop and Mobile */}
         <div
-          className={`lg:flex lg:items-center lg:space-x-8 absolute lg:static left-0 right-0 top-14 lg:top-auto z-50 lg:w-auto w-full bg-blue-600 lg:bg-transparent p-4 lg:p-0 shadow-lg lg:shadow-none transition-all duration-300 ease-in-out ${
+          className={`lg:flex lg:items-center lg:space-x-8 absolute lg:static left-0 right-0 top-14 lg:top-auto z-50 lg:w-auto w-full shadow-2xl  bg-blue-500/30 lg:bg-transparent p-4 lg:p-0 lg:shadow-none transition-all duration-500 ease-in-out ${
             isOpen ? 'block' : 'hidden'
           }`}
           onMouseLeave={closeMenu}
         >
-          <Link href="/" className="block py-2 lg:py-0 text-white hover:text-gray-300">
+          <Link href="/" className="block py-2 lg:py-0 text-white hover:text-gray-500">
             Home
           </Link>
           <Link href="/About" className="block py-2 lg:py-0 text-white hover:text-gray-300">

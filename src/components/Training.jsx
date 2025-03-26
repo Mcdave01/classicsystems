@@ -33,7 +33,7 @@ const Training = () => {
       title: "Cyber Security",
       description: "Learn to protect systems, networks, and programs from digital attacks. Covers security fundamentals, ethical hacking, and threat analysis.",
       iconComponent: <Shield className="h-8 w-8 text-white" />,
-      color: "border-blue-600",
+      color: "border-red-600",
       link: "/TrainingCourses",
       delay: "0"
     },
@@ -41,7 +41,7 @@ const Training = () => {
       title: "Mobile App Development",
       description: "Master the creation of applications for iOS and Android platforms using React Native, Flutter, and native development approaches.",
       iconComponent: <Smartphone className="h-8 w-8 text-white" />,
-      color: "border-blue-600",
+      color: "border-red-600",
       link: "/TrainingCourses",
       delay: "100"
     },
@@ -49,7 +49,7 @@ const Training = () => {
       title: "Data Science",
       description: "Explore data analysis, visualization, machine learning, and AI to extract valuable insights and make data-driven decisions.",
       iconComponent: <Database className="h-8 w-8 text-white" />,
-      color: "border-blue-600",
+      color: "border-red-600",
       link: "/TrainingCourses",
       delay: "200"
     },
@@ -57,7 +57,7 @@ const Training = () => {
       title: "Digital Literacy",
       description: "Develop essential computer skills, internet navigation, online safety, and productivity tools for the modern digital workplace.",
       iconComponent: <Monitor className="h-8 w-8 text-white" />,
-      color: "border-blue-600",
+      color: "border-red-600",
       link: "/TrainingCourses",
       delay: "300"
     },
@@ -65,7 +65,7 @@ const Training = () => {
       title: "UI/UX Design",
       description: "Create intuitive user interfaces and meaningful experiences through user research, wireframing, prototyping, and usability testing.",
       iconComponent: <Layers className="h-8 w-8 text-white" />,
-      color: "border-blue-600",
+      color: "border-red-600",
       link: "/TrainingCourses",
       delay: "400"
     },
@@ -73,7 +73,7 @@ const Training = () => {
       title: "Graphics Design",
       description: "Learn visual communication principles and design techniques using industry-standard tools like Photoshop, Illustrator, and more.",
       iconComponent: <PenTool className="h-8 w-8 text-white" />,
-      color: "border-blue-600",
+      color: "border-red-600",
       link: "/TrainingCourses",
       delay: "500"
     }
@@ -112,7 +112,7 @@ const Training = () => {
         >
           <Link
             href="/TrainingCourses"
-            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors text-lg font-medium"
+            className="inline-block bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors text-lg font-medium"
           >
             View All Courses
           </Link>

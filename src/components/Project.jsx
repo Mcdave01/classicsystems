@@ -28,7 +28,7 @@ const ProjectCard = ({ title, description, image, link, delay }) => {
         <p className="text-gray-600 mb-4">{description}</p>
         <Link
           href={link}
-          className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors"
+          className="inline-block bg-red-600 text-white px-4 py-2 rounded hover:bg-red-800 transition-colors"
         >
           View Project
         </Link>
@@ -108,7 +108,7 @@ const Project = () => {
         >
           <Link
             href="#"
-            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors text-lg font-medium"
+            className="inline-block bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-800 transition-colors text-lg font-medium"
           >
             View All Projects
           </Link>
