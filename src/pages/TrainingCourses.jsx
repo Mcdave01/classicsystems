@@ -294,7 +294,7 @@ const TrainingCourses = () => {
                   We offer tailored training programs for organizations and teams. Our experts can design custom courses to meet your specific needs and objectives.
                 </p>
                 <ul className="list-disc list-inside text-gray-600 mb-6">
-                  <li>On-site or remote options available</li>
+                  <li>On-Site or remote options available</li>
                   <li>Flexible scheduling to accommodate your team</li>
                   <li>Focused on your specific industry challenges</li>
                   <li>Practical, hands-on learning experiences</li>
@@ -307,7 +307,7 @@ const TrainingCourses = () => {
                   rel="noopener noreferrer"
                   className="inline-block px-6 py-3 rounded-lg bg-red-600 text-white hover:bg-red-900/70 transition-colors text-lg font-medium"
                 >
-                  Request Custom Training
+                  Request Custom Training.
                 </Link>
               </div>
             </div>
