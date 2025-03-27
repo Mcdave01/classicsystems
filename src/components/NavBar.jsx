@@ -41,7 +41,8 @@ const NavBar = () => {
   return (
     <nav 
       ref={navRef}
-      className="bg-red-600   shadow-md w-full transition-all duration-300 fixed px-10 top-0 left-0 z-50 h-[50px]"
+      className="bg-red-600   shadow-md w-full
+       transition-all duration-300 fixed px-10 top-0 left-0 z-50 h-[50px]"
     >
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo with reduced height */}
