@@ -57,7 +57,7 @@ export default function Hero() {
           <div className="flex h-full items-center justify-center">
           <Cards className="justify-center w-[1000px] h-[400px] 
              pt-[100px] text-[3rem] textShadow-lg
-               shadow-amber-500 text-white font-bold bg-amber-600/50">
+               shadow-amber-500 text-white font-bold bg-amber-600/60">
           <h1>Discover Our Services</h1>
             </Cards>
           </div>
