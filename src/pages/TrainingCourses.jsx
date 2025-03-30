@@ -94,7 +94,7 @@ const CoursesFilter = ({ activeFilter, setActiveFilter }) => {
           className={`px-5 py-2 rounded-full transition-all duration-200 ${
             activeFilter === filter.value
               ? "bg-red-600 text-white shadow-md"
-              : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+              : "bg-gray-100 text-gray-700 hover:bg-gray-200"
           }`}
         >
           {filter.name}
@@ -294,7 +294,7 @@ const TrainingCourses = () => {
                   We offer tailored training programs for organizations and teams. Our experts can design custom courses to meet your specific needs and objectives.
                 </p>
                 <ul className="list-disc list-inside text-gray-600 mb-6">
-                  <li>On-site or remote options available</li>
+                  <li>On-Site or remote options available</li>
                   <li>Flexible scheduling to accommodate your team</li>
                   <li>Focused on your specific industry challenges</li>
                   <li>Practical, hands-on learning experiences</li>
@@ -307,7 +307,7 @@ const TrainingCourses = () => {
                   rel="noopener noreferrer"
                   className="inline-block px-6 py-3 rounded-lg bg-red-600 text-white hover:bg-red-900/70 transition-colors text-lg font-medium"
                 >
-                  Request Custom Training
+                  Request Custom Training.
                 </Link>
               </div>
             </div>

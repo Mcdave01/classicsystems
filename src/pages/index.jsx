@@ -42,7 +42,7 @@ export default function Home() {
         <div className="px-4 py-12">
           {/* Service Heading */}
           <div className="text-center mb-12" data-aos="fade-up">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
             <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
             <p className="max-w-2xl mx-auto text-gray-600">
               We provide top-quality technology solutions tailored to meet your specific needs
